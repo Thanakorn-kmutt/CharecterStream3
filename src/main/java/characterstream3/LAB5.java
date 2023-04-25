@@ -1,13 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package characterstream3;
 
-/**
- *
- * @author Student
- */
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class LAB5 {
-    
+    public static void main(String[] args) {       
+        InputStreamReader in = new InputStreamReader(System.in);
+        BufferedReader input = new BufferedReader(in);       
+        try {
+            System.out.println("Enter name: ");
+            String name = input.readLine();
+            System.out.println(name);
+            System.out.println("Enter age:");
+            int age = input.readLine();
+            System.out.println(age);
+        } catch (IOException ex) {
+            Logger.getLogger(LAB5.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
 }

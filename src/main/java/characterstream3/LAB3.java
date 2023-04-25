@@ -8,8 +8,6 @@ public class LAB3 {
     public static void main(String[] args) {
         try {
             PrintWriter output = new PrintWriter("data.txt");
-            output.println("Hello World!");
-            output.println("Welcome to Java");
             output.println("Harry Potter");
             output.println("19");
             output.println("60.5");
@@ -28,9 +26,9 @@ public class LAB3 {
             }
             
         }  catch (FileNotFoundException ex) {
-            Logger.getLogger(LAB1.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LAB3.class.getName()).log(Level.SEVERE, null, ex);
         }  catch (IOException ex) {
-            Logger.getLogger(LAB1.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LAB3.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }
